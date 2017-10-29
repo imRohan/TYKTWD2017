@@ -1,4 +1,4 @@
-<!-- Lovingly crafted by Rohan Likhite -->
+<!-- Your Dope A$$ Weather App!-->
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -14,10 +14,30 @@
     </head>
     <body>
 
-        <p>Hello world!</p>
-        
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/main.js"></script>
-        <script src="js/weather.js"></script>
+      <div class="app--title">Weather Bot</div>
+      <div class="app--weather-container">
+        <div class="weather--current">
+          Current Temp: 
+          <span class="js-current"></span>
+        </div>
+        <div class="weather--high">
+          Todays High: 
+          <span class="js-high"></span>
+        </div>
+        <div class="weather--low">
+          Todays Low: 
+          <span class="js-low"></span>
+        </div>
+      </div>
+      <div class="app--city-input">
+        <input class="js-city-name" placeholder="Enter a City Name"></input>
+        <button class="js-city-button">Get Weather</button>
+      </div>
+
+      <!-- Javascript Stuff! -->
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="js/main.js"></script>
+      <script src="js/weather.js"></script>
+      <!-- /Javascript Stuff! -->
     </body>
 </html>

@@ -2,6 +2,13 @@ var WEATHER = (function () {
 
   var _injectDataElements = function (weatherData) {
     console.table(weatherData)
+    var _high = $('.js-high')
+    var _low = $('.js-low')
+    var _current = $('.js-current')
+
+    _high.html(weatherData.main.temp_max)
+    _low.html(weatherData.main.temp_min)
+    _current.html(weatherData.main.temp)
   };
 
   var getWeather = function (cityName) {
