@@ -4,34 +4,38 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <!-- Title of the website -->
+        <title>Enter Title Here</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
     </head>
     <body>
+      <!-- Title -->
+      <div class="app--title">Weather App!</div>
 
-      <div class="app--title">Weather Bot</div>
-      <div class="app--weather-container">
-        <div class="weather--current">
-          Current Temp: 
-          <span class="js-current"></span>
-        </div>
-        <div class="weather--high">
-          Todays High: 
-          <span class="js-high"></span>
-        </div>
-        <div class="weather--low">
-          Todays Low: 
-          <span class="js-low"></span>
-        </div>
-      </div>
+      <!-- Input Field -->
       <div class="app--city-input">
         <input class="js-city-name" placeholder="Enter a City Name"></input>
         <button class="js-city-button">Get Weather</button>
+      </div>
+
+      <!-- Weather Data Display -->
+      <div class="app--weather-container">
+        <div class="weather--current">
+          Current Temp: 
+          <span class="js-current"> - </span>
+        </div>
+        <div class="weather--high">
+          High: 
+          <span class="js-high"> - </span>
+        </div>
+        <div class="weather--low">
+          Low: 
+          <span class="js-low"> - </span>
+        </div>
       </div>
 
       <!-- Javascript Stuff! -->

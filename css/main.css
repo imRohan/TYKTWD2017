@@ -57,11 +57,21 @@ textarea {
    ========================================================================== */
 
 .app--title {
+  text-align: center;
   font-size: 4em;
 }
 
+.app--city-input {
+  text-align: center;
+}
+
+.app--weather-container {
+  text-align: center;
+}
+
 .weather--current, .weather--high, .weather--low {
-  font-size: 3em;
+  display: inline-block;
+  font-size: 2em;
 }
 
 

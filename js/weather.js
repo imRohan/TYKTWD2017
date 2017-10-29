@@ -1,7 +1,7 @@
 var WEATHER = (function () {
 
   var _injectDataElements = function (weatherData) {
-    console.table(weatherData)
+    console.log('Putting data into the DOM')
     var _high = $('.js-high')
     var _low = $('.js-low')
     var _current = $('.js-current')
@@ -17,6 +17,8 @@ var WEATHER = (function () {
     $.ajax({
           url: _url,  
           success:function(weatherData) {
+            console.log('Success! We Got Weather!')
+            console.table(weatherData)
             _injectDataElements(weatherData)
           }
             
