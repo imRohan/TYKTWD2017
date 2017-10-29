@@ -1,3 +1,3 @@
 $( document ).ready(function() {
-    Module.publicMethod("ready")
+    WEATHER.getWeather("toronto")
 });
